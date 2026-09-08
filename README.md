@@ -5,6 +5,8 @@ The original port was made by bog.
 
 Dreamers were fixed by the Horiza official.
 
+The current patch port download may not work so here is the link: https://glitches-hk-port.vercel.app/
+
 808 mb was taken from bog.
 
 W bog for making free hollow knight.
