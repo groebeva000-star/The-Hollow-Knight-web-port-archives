@@ -97,6 +97,17 @@ function gp(f,s,e){
   return Array.from({length:e-s+1},(_,i)=>`${f}.part${s+i}`);
 }
 
+	<div id="overlay-container" style="position:fixed;inset:0;pointer-events:none;z-index:9998;">
+  <img id="overlay-img" src="your-image.png"
+       style="width:100%;height:100%;object-fit:contain;opacity:0.5;" />
+</div>
+<input id="overlay-opacity" type="range" min="0" max="1" step="0.01" value="0.5"
+       style="position:fixed;bottom:12px;left:12px;z-index:9999;" />
+<script>
+document.getElementById('overlay-opacity').addEventListener('input', e => {
+  document.getElementById('overlay-img').style.opacity = e.target.value;
+});
+</script>
 // -------- Unity bootstrapping --------
 (async()=>{
   const [du,wu]=await Promise.all([
